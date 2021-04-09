@@ -5,4 +5,4 @@ function [K] = CreateCalibrationMatrix(fx, fy, cx, cy)
   K(1,3) = cx;
   K(2,3) = cy;
   K(3,3) = 1;
-endfunction
+end
