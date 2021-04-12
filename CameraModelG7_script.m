@@ -14,8 +14,8 @@ focal_length_m = focal_length_mm * mm2m_factor;
 
 % calibration matrix
 K = eye(3);
-K(1,1) = focal_length_mm / pixel_pitch_m(1);
-K(2,2) = focal_length_mm / pixel_pitch_m(2);
+K(1,1) = focal_length_m / pixel_pitch_m(1);
+K(2,2) = focal_length_m / pixel_pitch_m(2);
 K(1,3) = sensor_pixels(1)/2;
 K(2,3) = sensor_pixels(2)/2;
 K(3,3) = 1;
